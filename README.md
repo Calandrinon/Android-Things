@@ -1,11 +1,14 @@
-# IoT-Mobile-Course
-Lectures and labs for the Iot-Mobile course (also called Android-Things, like the old platform deprecated by Google)  
+# Android-Things
+Lectures and labs for the IoT course (also called Android-Things, like the old platform deprecated by Google)  
 
 ## Resources
 - [NeuralPi - RaspberryPi guitar pedal using an LSTM model](https://github.com/GuitarML/NeuralPi)
 - [Arduino FM Radio](https://www.youtube.com/watch?v=n1hPj2wfsnA)
 - [A simple audio amplifier](https://duino4projects.com/simple-audio-amplifier/)
 - [RaspberryPi + Arduino Serial Communication](https://roboticsbackend.com/raspberry-pi-arduino-serial-communication/)
+- [DHT11 sensor setup on Raspberry Pi](https://www.circuitbasics.com/how-to-set-up-the-dht11-humidity-sensor-on-the-raspberry-pi/)
+- [DHT11 Python library](https://github.com/szazo/DHT11_Python)
+- [MQTT and sensors](https://www.inzata.com/making-sense-of-iot-sensors-mqtt-and-streaming-data/)
 
 ## Ideas
 
@@ -32,3 +35,7 @@ Lectures and labs for the Iot-Mobile course (also called Android-Things, like th
 
 		- An Arduino with a WiFi module
 
+
+## Setup
+
+![Setup](IMG_20220414_155744.jpg)
