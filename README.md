@@ -52,5 +52,7 @@ To access the Raspberry Pi without a monitor, we can log into the board through 
 
 For the Python scripts used to read and stream the sensor data, the RPI.GPIO module is responsible for obtaining the sensor values, while the paho.mqtt module sends/receives messages containing the sensor values to/from a Mosquitto MQTT broker installed locally on the Raspberry Pi (hence the 127.0.0.1 IP for the broker address in the script). The main idea of MQTT is that we have publishers who "publish" data and subscribers which "subscribe" to the topics to which the publishers send data. This is done in real time, almost instantaneously.
 
+![Diagram](mqtt-diagram-example.jpeg)
+
 A next step would be to create a small Angular project and a plot with Plotly which would display the values visually. To subscribe to the stream of data coming from the Python script through the broker, one could use Observables. 
 
