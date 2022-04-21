@@ -39,3 +39,14 @@ Lectures and labs for the IoT course (also called Android-Things, like the old p
 ## Setup
 
 ![Setup](IMG_20220414_155744.jpg)
+
+## Diagram
+
+The setup contains a single DHT11 sensor which is supposed to obtain the temperature and the humidity of the environment. The VCC pin of the sensor is the power supply pin which is connected to the pin no. 2 on the board. The signal pin is used to obtain the temperature and humidity, while the ground pin of the sensor is connected to the 6th pin (ground) on the board. The third pin of the sensor is unused. In order to limit current, a 4.7K Ohm resistor is placed between the VCC and the signal pin.
+
+![Diagram](rpi-dht11.png)
+
+For the Python scripts used to read and stream the sensor data, the RPI.GPIO module is responsible for obtaining the sensor values, while the paho.mqtt module sends/receives messages containing the sensor values to/from a Mosquitto MQTT broker installed locally on the Raspberry Pi (hence the 127.0.0.1 IP for the broker address in the script). 
+
+A next step would be to create a small Angular project and a plot with Plotly which would display the values visually. To subscribe to the stream of data coming from the Python script through the broker, one could use Observables. 
+
